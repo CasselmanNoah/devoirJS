@@ -31,40 +31,25 @@ divCouleur3.addEventListener("click", div3, false)
 divCouleur4.addEventListener("click", div4, false)
 divCouleur5.addEventListener("click", div5, false)
 
-
 var divEcran3C1 = ecran3.children[2].firstChild.nextElementSibling
 var divEcran3C2 = ecran3.children[3].firstChild.nextElementSibling
 var divEcran3C3 = ecran3.children[4].firstChild.nextElementSibling
 divEcran3C1.addEventListener("click", divC1, false)
 divEcran3C2.addEventListener("click", divC2, false)
 divEcran3C3.addEventListener("click", divC3, false)
-
 window.addEventListener("load", onLoad);
-
 inputNb.addEventListener("click", clickBt2, false)
-console.log(inputNb.value)
-
-
-
+console.log(window.localStorage)
+//s'éxecute au lancement de la page
 function onLoad() {
-
     btEcran1.setAttribute('disabled', true);
     btEcran3.setAttribute('disabled', true);
     btEcran2.setAttribute('disabled', true)
-
-
-    /*
-        btRetour2.setAttribute('disabled', true);
-
-        btRetour3.setAttribute('disabled', true);
-        btRetour4.setAttribute('disabled', true);
-        */
     ecran1.style.display = "block"
     ecran2.style.display = "none";
     ecran3.style.display = "none";
     ecran4.style.display = "none";
     ecran1.classList.add('image');
-
 }
 
 function divC1() {
@@ -114,8 +99,6 @@ function div1() {
     } else {
         btEcran1.setAttribute('disabled', true);
     }
-
-
 }
 
 function div2() {
@@ -128,7 +111,6 @@ function div2() {
     } else {
         btEcran1.setAttribute('disabled', true);
     }
-
 }
 
 function div3() {
@@ -153,7 +135,6 @@ function div4() {
     } else {
         btEcran1.setAttribute('disabled', true);
     }
-
 }
 
 function div5() {
@@ -172,7 +153,6 @@ function clickBt1() {
     ecran1.style.display = "none";
     ecran2.style.display = "block";
 }
-
 
 function clickBt2R() {
 
@@ -197,21 +177,16 @@ function clickBt() {
 }
 
 function clickBt3() {
-
     ecran3.style.display = "none";
     ecran4.style.display = "block";
 }
 
 function clickBt3R() {
-
     ecran3.style.display = "none";
     ecran2.style.display = "block";
 }
 
 function clickBt4R() {
-
     ecran3.style.display = "block";
     ecran4.style.display = "none";
 }
-
-//
